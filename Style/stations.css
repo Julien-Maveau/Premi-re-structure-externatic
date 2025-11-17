@@ -1,0 +1,11 @@
+.tech-list {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+}
+.tech {
+ background: #e5e5e5;
+ padding: 10px 16px;
+ border-radius: 6px;
+}
+
