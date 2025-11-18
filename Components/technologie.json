@@ -1,0 +1,156 @@
+[
+    {
+        "Entreprise": "externaric",
+        "annee": 2025,
+        "secteur": [
+            {
+                "name": "FRONT END",
+                "card-identity": "Branche-front",
+                "sub": [
+                    {
+                        "name": "DEV",
+                        "card-identity": "Branche-front-1",
+                        "sub": [
+                            {
+                                "name": "JavaScript",
+                                "card-identity": "Branche-front-2",
+                                "sub": [
+                                    {
+                                        "name": "Framework",
+                                        "card-identity": "Branche-front-3",
+                                        "sub": [
+                                            {
+                                                "name": "Angular",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Angular.js",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Ember.js",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "React.js",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "JSF/Jakarta faces",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Vue.js",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Swelte",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Blackbone.js",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Vanilla.js",
+                                                "card-identity": "Branche-front-4"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "CSS",
+                                "card-identity": "Branche-front-2",
+                                "sub": [
+                                    {
+                                        "name": "Framework",
+                                        "card-identity": "Branche-front-3",
+                                        "sub": [
+                                            {
+                                                "name": "Boostrap",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Fondation",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Less",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Sass",
+                                                "card-identity": "Branche-front-4"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "HTML",
+                                "card-identity": "Branche-front-2",
+                                "sub": [
+                                    {
+                                        "name": "Framework",
+                                        "card-identity": "Branche-front-3",
+                                        "sub": [
+                                            {
+                                                "name": "Boostrap",
+                                                "card-identity": "Branche-front-4"
+                                            },
+                                            {
+                                                "name": "Fondation",
+                                                "card-identity": "Branche-front-4"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "JAVA",
+                                "card-identity": "Branche-front-2",
+                                "sub": [
+                                    {
+                                        {
+                                            "name": "GWT",
+                                            "card-identity": "Branche-front-4"
+                                        },
+                                        {
+                                            "name": "JSF",
+                                            "card-identity": "Branche-front-4"
+                                        },
+                                        {
+                                            "name": "JAVA FX",
+                                            "card-identity": "Branche-front-4"
+                                        },
+                                        {
+                                            "name": "Vaadin",
+                                            "card-identity": "Branche-front-4"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "C#",
+                                "card-identity": "Branche-front-2",
+                                "sub": [
+                                    
+                                            {
+                                                "name": "Blazor",
+                                                "card-identity": "Branche-front-4"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Elm",
+                                "card-identity": "Branche-front-2"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    
