@@ -4,8 +4,8 @@
     
     <meta charset="UTF-8" />
     <title>Carte des technologies</title>
-
-    <link rel="stylesheet" href="/Style/layout.css" />
+    
+    <link rel="stylesheet" href="Style/layout.css" />
 
   
 </head>
@@ -18,19 +18,22 @@
 </header>
 
 <main>
-    <form action="" method="get" class="Search">
-        <div class="form-example">
-            <label for="Search"> Entrez votre recherche </label>
-            <input type="text" name="Search" id="Search" required /> 
+    <form action="" method="get" class="Search"><script src="scripts\search.js">
+        </script><div class="form-example">
+            <label for="Search-word"> Entrez votre recherche </label>
+            <input type="text" name="Search-word" id="Search-word" required /> 
             <input type="submit" value="Search"/>
         </div>
     </form>
 
-     <section id="tech-list"></section>
+     <ul id="list">
+        <li> Front</li>
+        <li> Back</li>
+    </ul>
 
 </main>
 
-     <script src="scripts/main.js" defer></script>
+    
 
 </body>
 
