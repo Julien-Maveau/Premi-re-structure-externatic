@@ -1,9 +1,9 @@
-.tech-list {
+.Branche-front {
  display: flex;
  flex-wrap: wrap;
  gap: 10px;
 }
-.tech {
+.Branche-front-1 {
  background: #e5e5e5;
  padding: 10px 16px;
  border-radius: 6px;
