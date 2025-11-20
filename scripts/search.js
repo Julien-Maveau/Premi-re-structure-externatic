@@ -22,10 +22,10 @@ function searchbar() {
 // écouter le submit du form
 // appeler la fonction search bar
 // recuperer le fichier JSON
-const file = "../Components/technologie.json";
+const file = "Components/technologie.json";
 // recuperer la data du fichier JSON
 
-fetch(file)
+fetch (file)
     .then(response => response.json())
     .then((datatech) => {
         const list = document.querySelector(".list");
