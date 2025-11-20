@@ -1,11 +1,21 @@
-.Branche-front {
- display: flex;
- flex-wrap: wrap;
- gap: 10px;
+
+.Branches {
+display: flex;
+flex-flow: row  wrap ;
+justify-content: space-around;
 }
-.Branche-front-1 {
+
+.Branche-front {
  background: #e5e5e5;
  padding: 10px 16px;
  border-radius: 6px;
+ border-color: black;
 }
 
+
+.Branche-Back {
+ background: #e5e5e5;
+ padding: 10px 16px;
+ border-radius: 6px;
+ border-color: black;
+}
