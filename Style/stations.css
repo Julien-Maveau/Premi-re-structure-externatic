@@ -12,10 +12,66 @@ justify-content: space-around;
  border-color: black;
 }
 
-
-.Branche-Back {
+.Branche-front-1 {
  background: #e5e5e5;
  padding: 10px 16px;
  border-radius: 6px;
+ border-color: blueviolet;
+
+ .Branche-front-2{
+ background: #6f42c1;
+ padding: 10px 16px;
+ border-radius: 6px;
+ border-color: rgba(0, 255, 234, 0);
+}
+
+.Branche-front-3{
+ background: #357ddcfb;
+ padding: 10px 16px;
+ border-radius: 6px;
+ border-color: blue;
+}
+
+.Branche-front-4{
+ background: #2414fde0;
+ padding: 10px 16px;
+ border-radius: 6px;
+ border-color: rgba(76, 0, 255, 0.178);
+}
+
+}
+
+.Branche-Back {
+ background: #28a745;
+ padding: 10px 16px;
+ border-radius: 6px;
  border-color: black;
+}
+
+.Branche-Back-1{
+ background: #e5e5e5;
+ padding: 10px 16px;
+ border-radius: 6px;
+ border-color: blueviolet;
+}
+
+.Branche-Back-2{
+ background: #42c17794;
+ padding: 10px 16px;
+ border-radius: 6px;
+ border-color: crimson;
+}
+
+.Branche-Back-3{
+ background: #78dc35;
+ padding: 10px 16px;
+ border-radius: 6px;
+ border-color: blue;
+}
+
+.Branche-Back-4{
+ background: #14fd9c;
+ padding: 10px 16px;
+ border-radius: 6px;
+ border-color: magenta;
 }
