@@ -1,5 +1,5 @@
 
-const form = document.querySelector('.Search')  
+const form = document.querySelector('.Search');
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     searchbar()
@@ -14,7 +14,7 @@ function searchbar() {
         }
         else {
             x[i].style.display = "list-item";
-            }
+        }
     }
 }
 
