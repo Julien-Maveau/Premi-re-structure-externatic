@@ -11,27 +11,21 @@ fetch(file)
     technologies = data; // On stocke les données des technologies
     displayTechnologies(technologies); // Afficher toutes les technologies au début
 
-<<<<<<< HEAD
-    // Ajouter un écouteur d'événement pour filtrer les résultats en temps réel
-    searchBar.addEventListener("keyup", () => {
-=======
      // Ajouter un écouteur d'événement pour filtrer les résultats en temps réel
      // On parcourt chaque technologie pour ne garder que celles qui correspondent à la recherche.
     // si son nom contient la recherche
     // OU si sa ligne (description, catégorie, etc.) contient la recherche
     // on affiche ensuite les technologies filtrés et non tout.
-    searchBar.addEventListener("input", () => {
->>>>>>> ecc23ea8106f703f3159d18df87f0770a5962cfb
+    searchBar.addEventListener("keyup", () => {
       const searchQuery = searchBar.value.toLowerCase();
-  
+
       const filteredTechnologies = technologies.filter(techno => {
-        return techno.name.toLowerCase().includes(searchQuery)||  techno.line.toLowerCase().includes(searchQuery) || techno.tags.some(tag => tag.toLowerCase().includes(searchQuery)) ;
+        return techno.name.toLowerCase().includes(searchQuery) || techno.line.toLowerCase().includes(searchQuery) || techno.tags.some(tag => tag.toLowerCase().includes(searchQuery));
       });
       displayTechnologies(filteredTechnologies);
 
     });
   })
-
 // Fonction pour afficher les technologies sur la page
 function displayTechnologies(data) {
   technoLines.innerHTML = ''; // On vide la liste avant de l'actualiser
