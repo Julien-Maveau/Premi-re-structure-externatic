@@ -117,3 +117,66 @@ a {
     border-radius: 0.3vw;
 }
 }
+@media screen and (max-width: 600px) {
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #searchBar {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .techno-lines {
+    gap: 3vw;
+  }
+
+  .front-tech-item,
+  .back-tech-item {
+    width: 85%;       /* Une carte par ligne */
+    padding: 4vw;
+  }
+
+  .front-tech-item h3,
+  .back-tech-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .front-tech-item p,
+  .back-tech-item p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* --- Tablette (600px à 1024px) --- */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+  #searchBar {
+    width: 75%;
+  }
+
+  .front-tech-item,
+  .back-tech-item {
+    width: 40vw;     /* Deux cartes par ligne */
+  }
+}
+
+
+/* --- Desktop medium (1024px à 1440px) --- */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  .front-tech-item,
+  .back-tech-item {
+    width: 25vw;     /* Trois cartes par ligne */
+  }
+}
+
+
+/* --- Large desktop (déjà dans ton fichier) --- */
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+}
