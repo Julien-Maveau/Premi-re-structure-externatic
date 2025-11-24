@@ -11,7 +11,11 @@ fetch(file)
     technologies = data; // On stocke les données des technologies
     displayTechnologies(technologies); // Afficher toutes les technologies au début
 
-    // Ajouter un écouteur d'événement pour filtrer les résultats en temps réel
+     // Ajouter un écouteur d'événement pour filtrer les résultats en temps réel
+     // On parcourt chaque technologie pour ne garder que celles qui correspondent à la recherche.
+    // si son nom contient la recherche
+    // OU si sa ligne (description, catégorie, etc.) contient la recherche
+    // on affiche ensuite les technologies filtrés et non tout.
     searchBar.addEventListener("input", () => {
       const searchQuery = searchBar.value.toLowerCase();
       const filteredTechnologies = technologies.filter(techno => {
@@ -43,13 +47,26 @@ function displayTechnologies(data) {
       <ul class="tags">
         ${techno.tags.map(tag => `<li>${tag}</li>`).join('')}
       </ul>
+      <div class="description" style="display:none;">
+    ${techno.description || "Aucune description disponible."}
+  </div>
     `;
 
     // Ajouter un événement de clic pour afficher ou cacher les tags
     techItem.addEventListener("click", () => {
+    // On récupère la liste des tags à l'intérieur de la carte
       const tagsList = techItem.querySelector(".tags");
-      // Toggle la visibilité des tags
-      tagsList.style.display = tagsList.style.display === "none" || tagsList.style.display === "" ? "block" : "none";
+    // On récupère la description à l'intérieur de la carte
+      const description = techItem.querySelector(".description");
+    
+      const nowVisible = tagsList.style.display === "none" || tagsList.style.display === ""
+    ? "block" //les tags vont etre affichés
+    : "none"; // Les tags vont etre cachés
+
+   tagsList.style.display = nowVisible;
+
+  // Ensuite on affiche ou cache la description selon l'état réel
+  description.style.display = nowVisible === "block" ? "block" : "none";
     });
 
     technoLines.appendChild(techItem);

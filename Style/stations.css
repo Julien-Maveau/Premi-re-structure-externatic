@@ -79,11 +79,10 @@ header h1 {
 /* Ajout d'un style pour les tags */
 .front-tech-item .tags,
 .back-tech-item .tags {
-    margin-top: 15px;
-    display: none;
-    /* Cacher les tags par défaut */
-    font-size: 0.9rem;
-    color: #777;
+    margin-top: 1.5vw;
+    display: none;  /* Cacher les tags par défaut */
+    font-size: 0.8rem;
+    color: #040404;
     text-align: left;
     list-style-type: none;
     padding-left: 0;
@@ -107,4 +106,14 @@ a {
     color: white;
     border-radius: 8px;
     text-decoration: none;
+
+    .tech-item.description{
+    margin-top: 1vw;
+    padding: 0.8vw;
+    background: #fafafa;
+    border-left: 3px solid #ccc;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    border-radius: 0.3vw;
+}
 }
