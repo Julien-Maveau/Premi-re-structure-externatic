@@ -18,14 +18,23 @@ fetch(file)
     // on affiche ensuite les technologies filtrés et non tout.
     searchBar.addEventListener("keyup", () => {
       const searchQuery = searchBar.value.toLowerCase();
-
+      const body = document.querySelector("body")
       const filteredTechnologies = technologies.filter(techno => {
         return techno.name.toLowerCase().includes(searchQuery) || techno.line.toLowerCase().includes(searchQuery) || techno.tags.some(tag => tag.toLowerCase().includes(searchQuery));
       });
+      
       displayTechnologies(filteredTechnologies);
-
+      // --- Changer la couleur du background ---
+  if (searchQuery === "front") {
+    body.style.backgroundColor = "blue";
+  } else if (searchQuery === "back") {
+    body.style.backgroundColor = "green";
+  } else {
+    body.style.backgroundColor = "white"; // ou "transparent"
+  }
     });
   })
+  
 // Fonction pour afficher les technologies sur la page
 function displayTechnologies(data) {
   technoLines.innerHTML = ''; // On vide la liste avant de l'actualiser
