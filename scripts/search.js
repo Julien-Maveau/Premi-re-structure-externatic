@@ -47,13 +47,26 @@ function displayTechnologies(data) {
       <ul class="tags">
         ${techno.tags.map(tag => `<li>${tag}</li>`).join('')}
       </ul>
+      <div class="description" style="display:none;">
+    ${techno.description || "Aucune description disponible."}
+  </div>
     `;
 
     // Ajouter un événement de clic pour afficher ou cacher les tags
     techItem.addEventListener("click", () => {
+    // On récupère la liste des tags à l'intérieur de la carte
       const tagsList = techItem.querySelector(".tags");
-      // Toggle la visibilité des tags
-      tagsList.style.display = tagsList.style.display === "none" || tagsList.style.display === "" ? "block" : "none";
+    // On récupère la description à l'intérieur de la carte
+      const description = techItem.querySelector(".description");
+    
+      const nowVisible = tagsList.style.display === "none" || tagsList.style.display === ""
+    ? "block" //les tags vont etre affichés
+    : "none"; // Les tags vont etre cachés
+
+   tagsList.style.display = nowVisible;
+
+  // Ensuite on affiche ou cache la description selon l'état réel
+  description.style.display = nowVisible === "block" ? "block" : "none";
     });
 
     technoLines.appendChild(techItem);
