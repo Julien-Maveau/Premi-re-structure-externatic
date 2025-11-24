@@ -28,7 +28,15 @@ function displayTechnologies(data) {
   technoLines.innerHTML = ''; // On vide la liste avant de l'actualiser
   data.forEach((techno) => {
     const techItem = document.createElement("div");
-    techItem.classList.add("tech-item");
+    //On fait une condition if pour séparer les technologies selon leurs branches lines pour donner des classes différentes.
+    if (techno.line === "Frontend") {
+      techItem.classList.add("front-tech-item")
+
+    } if (techno.line === "Backend") {
+      techItem.classList.add("back-tech-item")
+
+    }
+//ajouter les éléments avec leur nouvelles classes
     techItem.innerHTML = `
       <h3>${techno.name}</h3>
       <p>${techno.line}</p>
