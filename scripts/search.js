@@ -70,6 +70,5 @@ function displayTechnologies(data) {
 
     technoLines.appendChild(techItem);
   });
-  window.open('doc/FF.pdf','_blank')
 }
 
