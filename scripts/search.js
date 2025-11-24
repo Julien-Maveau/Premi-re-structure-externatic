@@ -12,16 +12,16 @@ fetch(file)
     displayTechnologies(technologies); // Afficher toutes les technologies au début
 
     // Ajouter un écouteur d'événement pour filtrer les résultats en temps réel
-    searchBar.addEventListener("input", () => {
+    searchBar.addEventListener("keyup", () => {
       const searchQuery = searchBar.value.toLowerCase();
+  
       const filteredTechnologies = technologies.filter(techno => {
-        return techno.name.toLowerCase().includes(searchQuery) || techno.line.toLowerCase().includes(searchQuery);
+        return techno.name.toLowerCase().includes(searchQuery)||  techno.line.toLowerCase().includes(searchQuery) || techno.tags.some(tag => tag.toLowerCase().includes(searchQuery)) ;
       });
       displayTechnologies(filteredTechnologies);
+
     });
   })
-
-
 
 // Fonction pour afficher les technologies sur la page
 function displayTechnologies(data) {
