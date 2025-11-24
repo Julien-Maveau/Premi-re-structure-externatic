@@ -35,7 +35,7 @@ header h1 {
     padding: 20px;
 }
 
-.tech-item {
+.front-tech-item{
     background: #1e90ff;
     padding: 20px;
     border-radius: 10px;
@@ -45,26 +45,36 @@ header h1 {
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
 }
+.back-tech-item{
+    background: #2BBA91;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
 
-.tech-item:hover {
+.front-tech-item:hover  ,.back-tech-item:hover{
     transform: scale(1.05);
 }
 
-.tech-item h3 {
+.front-tech-item h3,.back-tech-item h3 {
     color: #fdfefe;
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.tech-item p {
+.front-tech-item p,.back-tech-item p {
     margin-top: 10px;
     font-size: 1rem;
     color: #0c0c0c;
 }
 
 /* Ajout d'un style pour les tags */
-.tech-item .tags {
+.front-tech-item .tags ,.back-tech-item .tags {
     margin-top: 15px;
     display: none;  /* Cacher les tags par défaut */
     font-size: 0.9rem;
@@ -74,7 +84,7 @@ header h1 {
     padding-left: 0;
 }
 
-.tech-item .tags li {
+.front-tech-item .tags li,.back-tech-item .tags li {
     margin: 5px 0;
     padding: 5px;
     background-color: #f1f1f1;
