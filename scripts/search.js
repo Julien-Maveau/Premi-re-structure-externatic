@@ -57,6 +57,7 @@ function displayTechnologies(data) {
       const tagsList = techItem.querySelector(".tags");
     // On récupère la description à l'intérieur de la carte
       const description = techItem.querySelector(".description");
+      
     
       const nowVisible = tagsList.style.display === "none" || tagsList.style.display === ""
     ? "block" //les tags vont etre affichés
