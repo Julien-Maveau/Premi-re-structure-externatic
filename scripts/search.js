@@ -71,3 +71,4 @@ function displayTechnologies(data) {
     technoLines.appendChild(techItem);
   });
 }
+
