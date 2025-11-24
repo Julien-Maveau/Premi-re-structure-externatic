@@ -1,21 +1,83 @@
 
-.Branches {
-display: flex;
-flex-flow: row  wrap ;
-justify-content: space-around;
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
 }
 
-.Branche-front {
- background: #e5e5e5;
- padding: 10px 16px;
- border-radius: 6px;
- border-color: black;
+header {
+    background: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
 
-.Branche-Back {
- background: #e5e5e5;
- padding: 10px 16px;
- border-radius: 6px;
- border-color: black;
+#searchBar {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.techno-lines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.tech-item {
+    background: #1e90ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.tech-item:hover {
+    transform: scale(1.05);
+}
+
+.tech-item h3 {
+    color: #fdfefe;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.tech-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #0c0c0c;
+}
+
+/* Ajout d'un style pour les tags */
+.tech-item .tags {
+    margin-top: 15px;
+    display: none;  /* Cacher les tags par défaut */
+    font-size: 0.9rem;
+    color: #777;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tech-item .tags li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    display: inline-block;
 }
