@@ -11,7 +11,11 @@ fetch(file)
     technologies = data; // On stocke les données des technologies
     displayTechnologies(technologies); // Afficher toutes les technologies au début
 
-    // Ajouter un écouteur d'événement pour filtrer les résultats en temps réel
+     // Ajouter un écouteur d'événement pour filtrer les résultats en temps réel
+     // On parcourt chaque technologie pour ne garder que celles qui correspondent à la recherche.
+    // si son nom contient la recherche
+    // OU si sa ligne (description, catégorie, etc.) contient la recherche
+    // on affiche ensuite les technologies filtrés et non tout.
     searchBar.addEventListener("input", () => {
       const searchQuery = searchBar.value.toLowerCase();
       const filteredTechnologies = technologies.filter(techno => {
@@ -28,7 +32,15 @@ function displayTechnologies(data) {
   technoLines.innerHTML = ''; // On vide la liste avant de l'actualiser
   data.forEach((techno) => {
     const techItem = document.createElement("div");
-    techItem.classList.add("tech-item");
+    //On fait une condition if pour séparer les technologies selon leurs branches lines pour donner des classes différentes.
+    if (techno.line === "Frontend") {
+      techItem.classList.add("front-tech-item")
+
+    } if (techno.line === "Backend") {
+      techItem.classList.add("back-tech-item")
+
+    }
+//ajouter les éléments avec leur nouvelles classes
     techItem.innerHTML = `
       <h3>${techno.name}</h3>
       <p>${techno.line}</p>

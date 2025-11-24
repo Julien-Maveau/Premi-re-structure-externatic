@@ -9,7 +9,7 @@
     "id": "css",
     "name": "CSS",
     "line": "Frontend",
-    "tags": ["style", "design", "layout"]
+    "tags": ["Style", "Design", "Layout"]
   },
   {
     "id": "c#",
@@ -21,16 +21,17 @@
     "id": "javascript",
     "name": "Javascript",
     "line": "Frontend",
-    "tags": ["Angular","Ember"]
+    "tags": ["Angular","Ember"],
+    "description" :"JavaScript permet de créer des interactions dynamiques côté client."
+
   },
 
   {
     "id": "ux/ui designer",
     "name": "UX/UI designer",
     "line": "Frontend",
-    "tags": ["Figma", "Adobe xd"]
-
-
+    "tags": ["Figma", "Adobe xd"],
+    "description": 
 
   },
   
@@ -39,31 +40,36 @@
     "id": "php",
     "name": "PHP",
     "line": "Backend",
-    "tags": ["Doctrine", "Eloquent ORM"]
+    "tags": ["Doctrine", "Eloquent ORM"],
+    "description" :
   },
   {
     "id": "java",
     "name": "Java",
     "line": "Backend",
-    "tags": ["Hibernate", "MyBatis"]
+    "tags": ["Hibernate", "MyBatis"],
+    "description" :
   },
   {
     "id": "python",
     "name": "Python",
     "line": "Backend",
-    "tags": ["Django", "framework"]
+    "tags": ["Django", "framework"],
+    "description" :
   },
   {
     "id": "c + +",
     "name": "C + +",
     "line": "Backend",
-    "tags": ["ImGUI", "wxWidgets"]
+    "tags": ["ImGUI", "wxWidgets"],
+    "description" :
   },
   {
     "id": "golang",
     "name": "Golang",
     "line": "Backend",
-    "tags": ["Gin", "Echo"]
+    "tags": ["Gin", "Echo"],
+    "description" :
   }
 
 

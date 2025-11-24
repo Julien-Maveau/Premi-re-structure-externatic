@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background: #f5f7fa;
@@ -35,7 +34,7 @@ header h1 {
     padding: 1vw;
 }
 
-.tech-item {
+.front-tech-item {
     background: #1e90ff;
     padding: 1vw;
     border-radius: 0.5vw;
@@ -46,25 +45,40 @@ header h1 {
     transition: background 0.3s, transform 0.3s;
 }
 
-.tech-item:hover {
+.back-tech-item {
+    background: #2BBA91;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.front-tech-item:hover,
+.back-tech-item:hover {
     transform: scale(1.05);
 }
 
-.tech-item h3 {
+.front-tech-item h3,
+.back-tech-item h3 {
     color: #fdfefe;
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.tech-item p {
-    margin-top: 1vw;
+.front-tech-item p,
+.back-tech-item p {
+    margin-top: 10px;
     font-size: 1rem;
     color: #0c0c0c;
 }
 
 /* Ajout d'un style pour les tags */
-.tech-item .tags {
+.front-tech-item .tags,
+.back-tech-item .tags {
     margin-top: 1.5vw;
     display: none;  /* Cacher les tags par défaut */
     font-size: 0.8rem;
@@ -74,7 +88,8 @@ header h1 {
     padding-left: 0;
 }
 
-.tech-item .tags li {
+.front-tech-item .tags li,
+.back-tech-item .tags li {
     margin-right: 0.5vw;
     padding: 0.5vw;
     background-color: #f1f1f1;
