@@ -10,37 +10,37 @@ header {
     background: #1e90ff;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 2vw;
 }
 
 header h1 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 #searchBar {
     width: 60%;
-    padding: 10px;
+    padding: 1vw;
     font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #ccc;
+    margin-top: 1vw;
 }
 
 .techno-lines {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    padding: 20px;
+    gap: 1vw;
+    padding: 1vw;
 }
 
 .tech-item {
     background: #1e90ff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.1);
+    width: 20vw;
     text-align: center;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
@@ -58,16 +58,16 @@ header h1 {
 }
 
 .tech-item p {
-    margin-top: 10px;
+    margin-top: 1vw;
     font-size: 1rem;
     color: #0c0c0c;
 }
 
 /* Ajout d'un style pour les tags */
 .tech-item .tags {
-    margin-top: 15px;
+    margin-top: 1.5vw;
     display: none;  /* Cacher les tags par défaut */
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #777;
     text-align: left;
     list-style-type: none;
@@ -75,9 +75,9 @@ header h1 {
 }
 
 .tech-item .tags li {
-    margin: 5px 0;
-    padding: 5px;
+    margin-right: 0.5vw;
+    padding: 0.5vw;
     background-color: #f1f1f1;
-    border-radius: 5px;
+    border-radius: 0.5vw;
     display: inline-block;
 }
