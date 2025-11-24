@@ -1,45 +1,49 @@
-
-const form = document.querySelector('.Search');
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    searchbar()
-})
-
-function searchbar() {
-    let input = document.querySelector('#Search-word').value
-    let x = document.getElementsByClassName('list');
-    for (i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input.toLowerCase())) {
-            x[i].style.display = "none";
-        }
-        else {
-            x[i].style.display = "list-item";
-        }
-    }
-}
-
-// récupérer le form
-// écouter le submit du form
-// appeler la fonction search bar
-// recuperer le fichier JSON
 const file = "Components/technologie.json";
-// recuperer la data du fichier JSON
+const technoLines = document.querySelector(".techno-lines");
+const searchBar = document.getElementById("Search-word");
 
-fetch (file)
-    .then(response => response.json())
-    .then((datatech) => {
-        const list = document.querySelector(".list");
+let technologies = [];
 
-        //  iterer sur 
-        datatech.forEach((name) => {
-            //  pour chacune des  , on crée le html
-            console.log(name);
-            const namelist = '<li id="${card-identity}" class="list"> ${name}</li>'
-            //  Recuperer le div 
-            // Inserer le html de chaque   dans le html
-            list.insertAdjacentHTML("beforeend", name);
-            console.log(namelist)
+// Fonction pour charger les technologies à partir du fichier JSON
+fetch(file)
+  .then(response => response.json())
+  .then((data) => {
+    technologies = data; // On stocke les données des technologies
+    displayTechnologies(technologies); // Afficher toutes les technologies au début
 
-        })
-    })
+    // Ajouter un écouteur d'événement pour filtrer les résultats en temps réel
+    searchBar.addEventListener("input", () => {
+      const searchQuery = searchBar.value.toLowerCase();
+      const filteredTechnologies = technologies.filter(techno => {
+        return techno.name.toLowerCase().includes(searchQuery) || techno.line.toLowerCase().includes(searchQuery);
+      });
+      displayTechnologies(filteredTechnologies);
+    });
+  })
 
+
+
+// Fonction pour afficher les technologies sur la page
+function displayTechnologies(data) {
+  technoLines.innerHTML = ''; // On vide la liste avant de l'actualiser
+  data.forEach((techno) => {
+    const techItem = document.createElement("div");
+    techItem.classList.add("tech-item");
+    techItem.innerHTML = `
+      <h3>${techno.name}</h3>
+      <p>${techno.line}</p>
+      <ul class="tags">
+        ${techno.tags.map(tag => `<li>${tag}</li>`).join('')}
+      </ul>
+    `;
+
+    // Ajouter un événement de clic pour afficher ou cacher les tags
+    techItem.addEventListener("click", () => {
+      const tagsList = techItem.querySelector(".tags");
+      // Toggle la visibilité des tags
+      tagsList.style.display = tagsList.style.display === "none" || tagsList.style.display === "" ? "block" : "none";
+    });
+
+    technoLines.appendChild(techItem);
+  });
+}

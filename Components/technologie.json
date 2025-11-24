@@ -1,314 +1,121 @@
-
 [
-    {
-        "Entreprise": "externaric",
-        "annee": 2025,
-        "secteur": [
-            {
-                "name": "FRONT END",
-                "card-identity": "Branche-front",
-                "sub": [
-                    {
-                        "name": "DEV",
-                        "card-identity": "Branche-front-1",
-                        "sub": [
-                            {
-                                "name": "JavaScript",
-                                "card-identity": "Branche-front-2",
-                                "sub": [
-                                    {
-                                        "name": "Framework",
-                                        "card-identity": "Branche-front-3",
-                                        "sub": [
-                                            {
-                                                "name": "Angular",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Angular.js",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Ember.js",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "React.js",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "JSF/Jakarta faces",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Vue.js",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Swelte",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Blackbone.js",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Vanilla.js",
-                                                "card-identity": "Branche-front-4"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "CSS",
-                                "card-identity": "Branche-front-2",
-                                "sub": [
-                                    {
-                                        "name": "Framework",
-                                        "card-identity": "Branche-front-3",
-                                        "sub": [
-                                            {
-                                                "name": "Boostrap",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Fondation",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Less",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Sass",
-                                                "card-identity": "Branche-front-4"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "HTML",
-                                "card-identity": "Branche-front-2",
-                                "sub": [
-                                    {
-                                        "name": "Framework",
-                                        "card-identity": "Branche-front-3",
-                                        "sub": [
-                                            {
-                                                "name": "Boostrap",
-                                                "card-identity": "Branche-front-4"
-                                            },
-                                            {
-                                                "name": "Fondation",
-                                                "card-identity": "Branche-front-4"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "JAVA",
-                                "card-identity": "Branche-front-2",
-                                "sub": [
-                                    {
-                                        "name": "GWT",
-                                        "card-identity": "Branche-front-4"
-                                    },
-                                    {
-                                        "name": "JSF",
-                                        "card-identity": "Branche-front-4"
-                                    },
-                                    {
-                                        "name": "JAVA FX",
-                                        "card-identity": "Branche-front-4"
-                                    },
-                                    {
-                                        "name": "Vaadin",
-                                        "card-identity": "Branche-front-4"
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "C#",
-                                "card-identity": "Branche-front-2",
-                                "sub": [
-                                    {
-                                        "name": "Blazor",
-                                        "card-identity": "Branche-front-4"
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Elm",
-                                "card-identity": "Branche-front-2"
-                            },
-                            {
-                                "name": "Design",
-                                "card-identity": "Branche-front-1",
-                                "sub": [
-                                    {
-                                        "name": "UX/UI designer",
-                                        "card-identity": "Branche-front-2",
-                                        "sub": [
-                                            {
-                                                "name": "Wireframes",
-                                                "card-identity": "Branche-front-3",
-                                                "sub": [
-                                                    {
-                                                        "name": "Figma",
-                                                        "card-identity": "Branche-front-4"
-                                                    },
-                                                    {
-                                                        "name": "Adobe XD",
-                                                        "card-identity": "Branche-front-4"
-                                                    },
-                                                    {
-                                                        "name": "Balsamiq",
-                                                        "card-identity": "Branche-front-4"
-                                                    },
-                                                    {
-                                                        "name": "Sketch",
-                                                        "card-identity": "Branche-front-4"
-                                                    },
-                                                    {
-                                                        "name": "InVision",
-                                                        "card-identity": "Branche-front-4"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Back-End",
-                                "card-identity": "Branche-Back",
-                                "sub": [
-                                    {
-                                        "name": "Serveur Web",
-                                        "card-identity": "Branche-Back-1",
-                                        "sub": [
-                                            {
-                                                "name": "Nginx",
-                                                "card-identity": "Branche-Back-4"
-                                            },
-                                            {
-                                                "name": "Apache",
-                                                "card-identity": "Branche-Back-4"
-                                            },
-                                            {
-                                                "name": "Caddy",
-                                                "card-identity": "Branche-Back-4"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Serveur d'application Linux",
-                                        "card-identity": "Branche-Back-1",
-                                        "sub": [
-                                            {
-                                                "name": "Java",
-                                                "card-identity": "Branche-Back-2",
-                                                "sub": [
-                                                    {
-                                                        "name": "Websphere",
-                                                        "card-identity": "Branche-Back-4"
-                                                    },
-                                                    {
-                                                        "name": "Weblogic",
-                                                        "card-identity": "Branche-Back-4"
-                                                    },
-                                                    {
-                                                        "name": "Wildfy",
-                                                        "card-identity": "Branche-Back-4"
-                                                    },
-                                                    {
-                                                        "name": "WildfyTomcat/Apache",
-                                                        "card-identity": "Branche-Back-4"
-                                                    },
-                                                    {
-                                                        "name": "Glassfish",
-                                                        "card-identity": "Branche-Back-4"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "name": "PHP",
-                                                "card-identity": "Branche-Back-2",
-                                                "sub": [
-                                                    {
-                                                        "name": "XAMPP",
-                                                        "card-identity": "Branche-Back-4"
-                                                    },
-                                                    {
-                                                        "name": "XAMPP Server",
-                                                        "card-identity": "Branche-Back-4"
-                                                    },
-                                                    {
-                                                        "name": "LAMP Server ",
-                                                        "card-identity": "Branche-Back-4"
-                                                    },
-                                                    {
-                                                        "name": "LiteSpeed",
-                                                        "card-identity": "Branche-Back-4"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "API/Webservice",
-                                        "card-identity": "Branche-Back-1",
-                                        "sub": [
-                                            {
-                                                "name": "Rest",
-                                                "card-identity": "Branche-Back-4"
-                                            },
-                                            {
-                                                "name": "WS SOAP",
-                                                "card-identity": "Branche-Back-4"
-                                            },
-                                            {
-                                                "name": "GraphQL",
-                                                "card-identity": "Branche-Back-4"
-                                            },
-                                            {
-                                                "name": "RPC",
-                                                "card-identity": "Branche-Back-4"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "DEV",
-                                "card-identity": "Branche-Back-1",
-                                "sub": [
-                                    {
-                                        "name": "Langage de prog",
-                                        "card-identity": "Branche-Back-2",
-                                        "sub": [
-                                            {
-                                                "name": "Framework",
-                                                "card-identity": "Branche-Back-3",
-                                                "sub": [
-                                                    {
-                                                        "name": "Angular",
-                                                        "card-identity": "Branche-Back-4"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
+  {
+    "id": "html",
+    "name": "HTML",
+    "line": "Frontend",
+    "tags": ["markup", "web", "base"]
+  },
+  {
+    "id": "css",
+    "name": "CSS",
+    "line": "Frontend",
+    "tags": ["style", "design", "layout"]
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "line": "Frontend",
+    "tags": ["js", "front", "interaction"]
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "line": "Frontend",
+    "tags": ["js", "framework", "ui"]
+  },
+  {
+    "id": "vue",
+    "name": "Vue.js",
+    "line": "Frontend",
+    "tags": ["js", "framework"]
+  },
+  {
+    "id": "angular",
+    "name": "Angular",
+    "line": "Frontend",
+    "tags": ["js", "framework"]
+  },
+  {
+    "id": "sass",
+    "name": "Sass",
+    "line": "Frontend",
+    "tags": ["css", "preprocessor"]
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "line": "Frontend",
+    "tags": ["css", "framework", "utility"]
+  },
+  {
+    "id": "php",
+    "name": "PHP",
+    "line": "Backend",
+    "tags": ["server", "web"]
+  },
+  {
+    "id": "symfony",
+    "name": "Symfony",
+    "line": "Backend",
+    "tags": ["php", "framework"]
+  },
+  {
+    "id": "laravel",
+    "name": "Laravel",
+    "line": "Backend",
+    "tags": ["php", "framework"]
+  },
+  {
+    "id": "node",
+    "name": "Node.js",
+    "line": "Backend",
+    "tags": ["js", "server"]
+  },
+  {
+    "id": "express",
+    "name": "Express",
+    "line": "Backend",
+    "tags": ["node", "framework"]
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "line": "Backend",
+    "tags": ["server", "api", "script"]
+  },
+  {
+    "id": "django",
+    "name": "Django",
+    "line": "Backend",
+    "tags": ["python", "framework"]
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "line": "Backend",
+    "tags": ["server", "enterprise"]
+  },
+  {
+    "id": "spring",
+    "name": "Spring",
+    "line": "Backend",
+    "tags": ["java", "framework"]
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "line": "Backend",
+    "tags": ["database", "sql"]
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "line": "Backend",
+    "tags": ["database", "sql"]
+  }
 ]
+
+
+
+
 
