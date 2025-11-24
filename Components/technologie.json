@@ -3,26 +3,30 @@
     "id": "html",
     "name": "HTML",
     "line": "Frontend",
-    "tags": ["Less", "Sass"]
+    "tags": ["Less", "Sass"],
+    "description": "HTML est le langage de base du web, utilisé pour structurer le contenu et les pages affichées dans un navigateur"
+  
   },
   {
     "id": "css",
     "name": "CSS",
     "line": "Frontend",
-    "tags": ["Style", "Design", "Layout"]
+    "tags": ["Style", "Design", "Layout"],
+    "description":"CSS est un langage qui permet de styliser et mettre en forme les pages web, en contrôlant les couleurs, la mise en page, les animations et l’apparence générale d’un site"
   },
   {
     "id": "c#",
     "name": "C#",
     "line": "Frontend",
-    "tags": ["Blazor"]
+    "tags": ["Blazor"],
+    "description":"C# est un langage moderne et puissant développé par Microsoft, utilisé pour créer des applications Windows, des jeux vidéo avec Unity, des services web et des logiciels multiplateformes."
   },
   {
     "id": "javascript",
     "name": "Javascript",
     "line": "Frontend",
     "tags": ["Angular","Ember"],
-    "description" :"JavaScript permet de créer des interactions dynamiques côté client."
+    "description":"JavaScript permet de créer des interactions dynamiques côté client."
 
   },
 
@@ -31,7 +35,7 @@
     "name": "UX/UI designer",
     "line": "Frontend",
     "tags": ["Figma", "Adobe xd"],
-    "description": 
+    "description":"L’UX/UI Design consiste à créer des interfaces intuitives et esthétiques en optimisant l’expérience utilisateur et la présentation visuelle d’un site ou d’une application"
 
   },
   
@@ -41,40 +45,39 @@
     "name": "PHP",
     "line": "Backend",
     "tags": ["Doctrine", "Eloquent ORM"],
-    "description" :
+    "description":"PHP est un langage côté serveur largement utilisé pour créer des sites dynamiques, des systèmes de gestion de contenu et des applications web connectées à une base de données"
   },
   {
     "id": "java",
     "name": "Java",
     "line": "Backend",
     "tags": ["Hibernate", "MyBatis"],
-    "description" :
+    "description":"Java est un langage robuste, orienté objet et multiplateforme, utilisé pour développer des applications d’entreprise, des logiciels Android et des systèmes à grande échelle"
   },
   {
     "id": "python",
     "name": "Python",
     "line": "Backend",
     "tags": ["Django", "framework"],
-    "description" :
+    "description": "Python est un langage de programmation polyvalent et facile à apprendre, idéal pour le développement web, l’analyse de données, l’intelligence artificielle et l’automatisation"
   },
   {
     "id": "c + +",
     "name": "C + +",
     "line": "Backend",
     "tags": ["ImGUI", "wxWidgets"],
-    "description" :
+    "description": "C++ est un langage performant orienté objet, utilisé pour créer des logiciels rapides et complexes comme les jeux vidéo, les moteurs graphiques ou les systèmes embarqués"
   },
   {
     "id": "golang",
     "name": "Golang",
     "line": "Backend",
     "tags": ["Gin", "Echo"],
-    "description" :
+    "description":"Golang est un langage rapide et moderne développé par Google, conçu pour créer des applications performantes, fiables et capables de gérer une forte concurrence, notamment dans le développement backend et les systèmes distribués"
   }
 
 
 
-  
   
 ]
 
