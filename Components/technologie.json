@@ -3,7 +3,7 @@
     "id": "html",
     "name": "HTML",
     "line": "Frontend",
-    "tags": ["markup", "web", "base"]
+    "tags": ["Less", "Sass"]
   },
   {
     "id": "css",
@@ -12,107 +12,64 @@
     "tags": ["style", "design", "layout"]
   },
   {
+    "id": "c#",
+    "name": "C#",
+    "line": "Frontend",
+    "tags": ["Blazor"]
+  },
+  {
     "id": "javascript",
-    "name": "JavaScript",
+    "name": "Javascript",
     "line": "Frontend",
-    "tags": ["js", "front", "interaction"]
+    "tags": ["Angular","Ember"]
   },
+
   {
-    "id": "react",
-    "name": "React",
+    "id": "ux/ui designer",
+    "name": "UX/UI designer",
     "line": "Frontend",
-    "tags": ["js", "framework", "ui"]
+    "tags": ["Figma", "Adobe xd"]
+
+
+
   },
-  {
-    "id": "vue",
-    "name": "Vue.js",
-    "line": "Frontend",
-    "tags": ["js", "framework"]
-  },
-  {
-    "id": "angular",
-    "name": "Angular",
-    "line": "Frontend",
-    "tags": ["js", "framework"]
-  },
-  {
-    "id": "sass",
-    "name": "Sass",
-    "line": "Frontend",
-    "tags": ["css", "preprocessor"]
-  },
-  {
-    "id": "tailwind",
-    "name": "Tailwind CSS",
-    "line": "Frontend",
-    "tags": ["css", "framework", "utility"]
-  },
+  
+  
   {
     "id": "php",
     "name": "PHP",
     "line": "Backend",
-    "tags": ["server", "web"]
-  },
-  {
-    "id": "symfony",
-    "name": "Symfony",
-    "line": "Backend",
-    "tags": ["php", "framework"]
-  },
-  {
-    "id": "laravel",
-    "name": "Laravel",
-    "line": "Backend",
-    "tags": ["php", "framework"]
-  },
-  {
-    "id": "node",
-    "name": "Node.js",
-    "line": "Backend",
-    "tags": ["js", "server"]
-  },
-  {
-    "id": "express",
-    "name": "Express",
-    "line": "Backend",
-    "tags": ["node", "framework"]
-  },
-  {
-    "id": "python",
-    "name": "Python",
-    "line": "Backend",
-    "tags": ["server", "api", "script"]
-  },
-  {
-    "id": "django",
-    "name": "Django",
-    "line": "Backend",
-    "tags": ["python", "framework"]
+    "tags": ["Doctrine", "Eloquent ORM"]
   },
   {
     "id": "java",
     "name": "Java",
     "line": "Backend",
-    "tags": ["server", "enterprise"]
+    "tags": ["Hibernate", "MyBatis"]
   },
   {
-    "id": "spring",
-    "name": "Spring",
+    "id": "python",
+    "name": "Python",
     "line": "Backend",
-    "tags": ["java", "framework"]
+    "tags": ["Django", "framework"]
   },
   {
-    "id": "mysql",
-    "name": "MySQL",
+    "id": "c + +",
+    "name": "C + +",
     "line": "Backend",
-    "tags": ["database", "sql"]
+    "tags": ["ImGUI", "wxWidgets"]
   },
   {
-    "id": "postgresql",
-    "name": "PostgreSQL",
+    "id": "golang",
+    "name": "Golang",
     "line": "Backend",
-    "tags": ["database", "sql"]
+    "tags": ["Gin", "Echo"]
   }
+
+
+
+  
+  
 ]
 
 
