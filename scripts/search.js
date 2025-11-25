@@ -25,10 +25,10 @@ fetch(file)
       
       displayTechnologies(filteredTechnologies);
       // --- Changer la couleur du background ---
-  if (searchQuery === "front") {
-    body.style.backgroundColor = "blue";
-  } else if (searchQuery === "back") {
-    body.style.backgroundColor = "green";
+  if (searchQuery === "frontend") {
+    body.style.backgroundColor = "#96E8FF";
+  } else if (searchQuery === "backend") {
+    body.style.backgroundColor = "#A0FFE0";
   } else {
     body.style.backgroundColor = "white"; // ou "transparent"
   }
