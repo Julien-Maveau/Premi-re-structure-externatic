@@ -29,8 +29,8 @@ fetch(file)
 // Fonction pour afficher les technologies sur la page
 function displayTechnologies(data) {
   technoLines.innerHTML = ''; // On vide la liste avant de l'actualiser
-  data.forEach((techno) => {
-    const techItem = document.createElement("div");
+  data.forEach((techno) => {  // on parcourt chaque technologie dans data
+    const techItem = document.createElement("div"); // on créer une classe div pour afficher une technologie
     //On fait une condition if pour séparer les technologies selon leurs branches lines pour donner des classes différentes.
     if (techno.line === "Frontend") {
       techItem.classList.add("front-tech-item")
@@ -39,8 +39,8 @@ function displayTechnologies(data) {
       techItem.classList.add("back-tech-item")
 
     }
-//ajouter les éléments avec leur nouvelles classes
-    techItem.innerHTML = `
+//ajouter les éléments avec leur nouvelles classes 
+    techItem.innerHTML = `   
       <h3>${techno.name}</h3>
       <p>${techno.line}</p>
       <ul class="tags">
@@ -69,7 +69,7 @@ function displayTechnologies(data) {
   description.style.display = nowVisible === "block" ? "block" : "none";
     });
 
-    technoLines.appendChild(techItem);
+    technoLines.appendChild(techItem); // ajoute un élément HTML comme dernier enfant d’un autre élément.
   });
 }
 
